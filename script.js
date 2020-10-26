@@ -6,7 +6,7 @@ addSelectButton.className = 'add.btn';
 let count = 0;
 
 
-const renderItems = () => {
+const renderItems = function obj() {
 
   if (document.querySelector('input').value === '') {
     return alert('Wrong value');
