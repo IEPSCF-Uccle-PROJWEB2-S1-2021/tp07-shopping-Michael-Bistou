@@ -9,7 +9,7 @@ let count = 0;
 const renderItems = () => {
 
   if (document.querySelector('input').value === '') {
-    return alert('Wrong value')
+    return alert('Wrong value');
   }
 
   const selectDeleteButton = '.'+deleteButton.className;
@@ -22,9 +22,7 @@ const renderItems = () => {
     evt.stopPropagation();
     document.querySelector(selectLi).remove();
   })
-
   document.querySelector('input').focus();
-
 }
 
 addSelectButton.addEventListener('click', renderItems);
